@@ -1,0 +1,210 @@
+header{
+    width: 100%;
+    height: auto;
+    padding: 3rem 1rem;
+    .containerHeader{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        .logo{
+            height: 9rem;
+            padding: .3rem;
+            border-radius: 100%;
+        }
+        .title{
+            font-family: 'Sofia', cursive;
+            color: $color3;
+            font-size: 6rem;
+            font-weight: bolder;
+            text-shadow: 2px 1px 3px $color1;
+            text-align: right;
+            padding-top: 1rem;
+            padding-left: 3rem;
+            padding-bottom: 0;
+        }
+        nav{
+            .menuNav{
+                display: flex;
+                list-style: none;
+                padding-top: 2rem;
+                .navItem a{
+                    color: $color1;
+                    text-decoration: none;
+                    font-weight: bolder;
+                    font-size: 1.5rem;
+                    padding: .5rem;
+                    #cartIcon{
+                        height: 1.5rem;
+                    }
+                    #qtyCart{
+                        color: $color3;
+                    }
+                }
+                .focusNav a{
+                    color: $color5;
+                    border-bottom: 2px solid $color5;
+                }
+                .navItem a:hover{
+                    color: $color5;
+                }
+                #cartIcon a:hover{
+                    opacity: .3;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px){
+    header{
+        .containerHeader{
+            .title{
+                font-size: 5rem;
+                text-shadow: 2px 1px 2.5px $color1;
+            }
+            nav{
+                .menuNav{
+                    padding-top: 4rem;
+                    .navItem a{
+                        font-size: 1.2rem;
+                        padding: .4rem;
+                        #cartIcon{
+                            height: 1.2rem;
+                        }
+                    }
+                    #qtyCart{
+                        font-size: .8rem;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1020px){
+    header{
+        padding: 2rem 1rem;
+        .containerHeader{
+            align-items: center;
+            .logo{
+                height: 7.5rem;
+            }
+            .title{
+                font-size: 4rem;
+                text-shadow: 2px 1px 2px $color1;
+                text-align: center;
+                padding-top: 1rem;
+                padding-left: 2rem;
+            }
+            nav{
+                .menuNav{
+                    padding-top: 4rem;
+                    .navItem a{
+                        font-size: 1rem;
+                        padding: .3rem;
+                        #cartIcon{
+                            height: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 900px){
+    header{
+        padding: 2rem 2rem;
+        .containerHeader{
+            flex-flow: row wrap;
+            justify-content: space-around;
+            .logo{
+                height: 8rem;
+            }
+            .title{
+                font-size: 5rem;
+            }
+            nav{
+                .menuNav{
+                    flex-flow: row nowrap;
+                    padding-top: 1.5rem;
+                    .navItem a{
+                        font-size: 1.3rem;
+                        #cartIcon{
+                            height: 1.3rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 768px){
+    header{
+        padding: 1.5rem 1.5rem;
+        .containerHeader{
+            .logo{
+                height: 7rem;
+            }
+            .title{
+                font-size: 4.5rem;
+            }
+            nav{
+                .menuNav{
+                    padding-top: 1.2rem;
+                    .navItem a{
+                        font-size: 1rem;
+                        #cartIcon{
+                            height: 1rem;
+                        }
+                        #qtyCart{
+                            font-size: .7;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 640px){
+    header{
+        padding: 1rem 1rem;
+        .containerHeader{
+            .logo{
+                height: 8rem;
+            }
+            .title{
+                font-size: 4rem;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 480px){
+    header{
+        .containerHeader{
+            .logo{
+                height: 6rem;
+            }
+            .title{
+                font-size: 3.7rem;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 380px){
+    header{
+        padding: .5rem;
+        .containerHeader{
+            .title{
+                font-size: 3rem;
+            }
+            nav{
+                .menuNav{
+                    padding-top: .8rem;
+                    #qtyCart{
+                        font-size: .6rem;
+                    }
+                }
+            }
+        }
+    }
+}

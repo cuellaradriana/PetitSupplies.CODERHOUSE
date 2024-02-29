@@ -1,0 +1,157 @@
+.modalContainer{
+    width: 100%;
+    margin: .5rem;
+    max-width: 800px;
+    max-height: 90%;
+    border-radius: 1rem;
+    padding: 1em 2rem;
+    background-color: $color2;
+    margin: auto;
+    text-align: center;
+    .modalTitle{
+        font-size: 1.8rem;
+        text-shadow: 1px 1px 1px $color6;
+        color: $color3;
+        font-weight: bolder;
+        text-align: center;
+        margin: .5rem;
+    }
+    .modalSubtitle{
+        margin: .5rem 2rem;
+        text-align: center;
+        line-height: 1.5rem;
+        font-size: 1rem;
+        font-weight: bolder;
+    }
+    .containerModalMain{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: center;
+        border: 1px solid $color4;
+        border-radius: 1rem;
+        margin-right: .5rem;
+        .formModal{
+            padding: .5rem 0;
+            text-align: center;
+            .labelsModal{
+                font-weight: bolder;
+                font-style: italic;
+                font-size: .8rem;
+            }
+            .inputsModal{
+                border: 1px solid $color5;
+                border-radius: 1rem;
+                padding: .3rem;
+                text-align: center;
+                margin-bottom: .5rem;
+                font-size: .8rem;
+            }
+            #name, #number, #date, #passCode, #telephone, #email{
+                width: 13rem;
+            }
+
+            .containerBtns{
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: center;
+                align-items: center;
+                .modalBtn{
+                    padding: .5rem;
+                    color: $color2;
+                    background-color: $color5;
+                    border: 1px solid $color5;
+                    border-radius: 1rem;
+                    margin: .5rem;
+                    font-weight: bolder;
+                }
+                .modalBtn:hover{
+                    background-color: $color2;
+                    color: $color5;
+                }
+            }
+        }
+        .imgModal{
+            height: 300px;
+            margin: .5rem 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 1020px){
+    .modalContainer{
+        margin: .4rem;
+        border-radius: 1rem;
+        padding: 1em 1rem;
+        .modalTitle{
+            font-size: 1.5rem;
+            margin: .4rem;
+        }
+        .modalSubtitle{
+            margin: .5rem 1rem;
+            line-height: 1rem;
+        }
+        .containerModalMain{
+            .formModal{
+                padding: .3rem 0;
+                .labelsModal{
+                    font-size: .7rem;
+                }
+                .inputsModal{
+                    margin-bottom: .4rem;
+                    font-size: .7rem;
+                }
+                #name, #number, #date, #passCode, #telephone, #email{
+                    width: 11rem;
+                }
+                .containerBtns{
+                    .modalBtn{
+                        padding: .4rem;
+                        font-size: .8rem;
+                    }
+                }
+            }
+            .imgModal{
+                height: 280px;
+                margin: .5rem 0;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 900px){
+    .modalContainer{
+        margin: .3rem;
+        padding: .8em .8rem;
+        .modalTitle{
+            font-size: 1.2rem;
+            margin: .3rem;
+        }
+        .modalSubtitle{
+            margin: .5rem .5rem;
+        }
+        .containerModalMain{
+            .formModal{
+                padding: .3rem 0;
+                .labelsModal{
+                    font-size: .9rem;
+                }
+                .inputsModal{
+                    margin-bottom: .4rem;
+                    font-size: .9rem;
+                }
+                #name, #number, #date, #passCode, #telephone, #email{
+                    width:15rem;
+                }
+                .containerBtns{
+                    .modalBtn{
+                        padding: .4rem;
+                        font-size: .9rem;
+                    }
+                }
+            }
+            .imgModal{
+                display: none;
+            }
+        }
+    } 
+}

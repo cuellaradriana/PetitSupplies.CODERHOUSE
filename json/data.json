@@ -1,0 +1,8 @@
+[{"id":1,"img":"img/box1.jpg","name":"Caja para tortas clásica","description":"15 unidades","price":1350,"quantity":1},
+    {"id":2,"img":"img/box2.jpg","name":"Caja para tortas especial","description":"10 unidades","price":1200,"quantity":1},
+    {"id":3,"img":"img/box3.jpg","name":"Caja para tortas premium","description":"10 unidades","price":1400,"quantity":1},
+    {"id":4,"img":"img/box4.jpg","name":"Caja para cupcakes grande","description":"10 unidades","price":1250,"quantity":1},
+    {"id":5,"img":"img/box5.jpg","name":"Caja para cupcakes mediana","description":"15 unidades","price":1350,"quantity":1},
+    {"id":6,"img":"img/box6.jpg","name":"Caja para cupcakes individual","description":"20 unidades","price":1550,"quantity":1},
+    {"id":7,"img":"img/box7.jpg","name":"Caja para macarons mediana","description":"15 unidades","price":1350,"quantity":1},
+    {"id":8,"img":"img/box8.jpg","name":"Caja para donuts mediana","description":"15 unidades","price":1350,"quantity":1}]

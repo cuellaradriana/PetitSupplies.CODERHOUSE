@@ -1,0 +1,147 @@
+.modal{
+    .modal-title{
+        color: $color3;
+        font-weight: bolder;
+        font-size: 2.5rem;
+        margin-left: .5rem;
+    }
+    #productsCart{
+        .modalProduct{
+            margin-bottom: 1rem;
+        }
+        #modalName{
+            color: $color4;
+            font-size: 1.3rem;
+            font-weight: bolder;
+            font-style: italic;
+        }
+        #modalPrice, #modalQty, #modalSubtotal{
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+        .btnAdd, .btnDeduct, .btnDelete{
+            padding: .6rem;
+            color: $color2;
+            background-color: $color3;
+            border: 1px solid $color3;
+            font-weight: bolder;
+            border-radius: 10px;
+        }     
+    }
+    .modal-footer{
+        display: flex;
+        justify-content: space-between;
+        #totalBuy{
+            font-weight: bolder;
+            color: $color4;
+            font-style: italic;
+        }
+        #buttonsModal{
+            #closeBtn, #confirmBtn{
+                color: $color2;
+                padding: 0.3rem;
+                background-color: $color5;
+                border-radius: 10px;
+                border: 1px $color5 solid;
+                font-weight: bolder;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1020px){
+    .modal{
+        .modal-title{
+            font-size: 2.3rem;
+        }
+        #productsCart{
+            .modalProduct{
+                margin-bottom: .8rem;
+            }
+            #modalName{
+                font-size: 1.2rem;
+            }
+            #modalPrice, #modalQty, #modalSubtotal{
+                font-size: 1rem;
+            }
+            .btnAdd, .btnDeduct, .btnDelete{
+                padding: .5rem;
+                font-size: .8rem;
+            }     
+        }
+        .modal-footer{
+            #totalBuy{
+                font-size: 1.3rem;
+            }
+            #buttonsModal{
+                #closeBtn, #confirmBtn{
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 800px){
+    .modal{
+        .modal-title{
+            font-size: 2.1rem;
+        }
+        #productsCart{
+            .modalProduct{
+                margin-bottom: .7rem;
+            }
+            #modalName{
+                font-size: 1.1rem;
+            }
+            #modalPrice, #modalQty, #modalSubtotal{
+                font-size: .9rem;
+            }
+            .btnAdd, .btnDeduct, .btnDelete{
+                padding: .4rem;
+                font-size: .7rem;
+            }     
+        }
+        .modal-footer{
+            #totalBuy{
+                font-size: 1rem;
+            }
+            #buttonsModal{
+                #closeBtn, #confirmBtn{
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 480px){
+    .modal{
+        .modal-title{
+            font-size: 2rem;
+        }
+        #productsCart{
+            .modalProduct{
+                margin-bottom: .5rem;
+            }
+            #modalName{
+                font-size: 1rem;
+            }
+            #modalPrice, #modalQty, #modalSubtotal{
+                font-size: .7rem;
+            }
+            .btnAdd, .btnDeduct, .btnDelete{
+                padding: .3rem;
+                font-size: .6rem;
+            }     
+        }
+        .modal-footer{
+            #totalBuy{
+                font-size: .9rem;
+            }
+            #buttonsModal{
+                #closeBtn, #confirmBtn{
+                    font-size: .9rem;
+                }
+            }
+        }
+    }
+}

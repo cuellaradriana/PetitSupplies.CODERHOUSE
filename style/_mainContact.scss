@@ -1,0 +1,146 @@
+#mainContact{
+    width: 100%;
+    height: auto;
+    padding-bottom: 1rem;
+    h2{
+        text-align: center;
+        text-decoration: underline 3px $color3;
+        font-size: 2.5rem;
+        width:auto;
+        margin-bottom: 3rem;
+        margin-top: 1rem;
+    }
+    #contactUs{
+        width: 30%;
+        margin: auto;
+        text-align: center;
+        padding: 10px;
+        label{
+            color: $color5;
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+        input{
+            width: 80%;
+            border-radius: 2rem;
+            border: 1px solid $color4;
+            text-align: center;
+            margin-bottom: 2rem;
+            padding: .6rem;
+        }
+        #messageUser{
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            width: 80%;
+            border-radius: 2rem;
+            border: 1px solid $color4;
+            padding: 1rem;
+        }
+        #sendForm{
+            margin:1rem;
+            background-color: $color4;
+            color: $color2;
+            font-size: 1.2rem;
+            border: 1px solid $color4;
+        }
+        #sendForm:hover{
+            background-color: $color2;
+            color: $color4;
+            font-weight: bold;
+        }
+        #deleteForm{
+            @extend #sendForm;
+            margin: 0;
+        }
+        #delete:hover{
+            background-color: $color2;
+            color: $color4;
+            font-weight: bold;
+        }
+    }
+}
+
+
+
+@media only screen and (max-width: 1020px){
+    #mainContact{
+        h2{
+            font-size:2.2rem;
+        }
+        #contactUs{
+            width: 37%;
+            label{
+                font-size: 1.2rem;
+            }
+            input{
+                width: 90%;
+                border-radius: 1.5rem;
+            }
+            #messageUser{
+                width: 90%;
+                border-radius: 1.5rem;
+            }
+            #sendForm{
+                font-size: 1rem;
+            }
+            #deleteForm{
+                margin: 0;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 768px){
+    #mainContact{
+        h2{
+            font-size: 2rem;
+        }
+        #contactUs{
+            width: 50%;
+            label{
+                font-size: 1.1rem;
+            }
+            input{
+                border-radius: 1.3rem;
+            }
+            #messageUser{
+                border-radius: 1.3rem;
+            }
+            #sendForm{
+                font-size: 1rem;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 480px){
+    #mainContact{
+        h2{
+            font-size: 1.7rem;
+        }
+        #contactUs{
+            width: 60%;
+            label{
+                font-size: .8rem;
+            }
+            input{
+                padding: .3rem;
+                font-size: .8rem;
+            }
+            #messageUser{
+                font-size: .8rem;
+            }
+            #sendForm{
+                font-size: .8rem;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 380px){
+    #mainContact{
+        h2{
+            font-size: 1.5rem;
+        }
+        #contactUs{
+            width: 80%;
+        }
+    }
+}

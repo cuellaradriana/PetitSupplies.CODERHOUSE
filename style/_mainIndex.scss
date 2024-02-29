@@ -1,0 +1,116 @@
+@import "mixins";
+
+.carousel{
+    width: 100%;
+    max-width: 120em;
+    padding: 1em;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 3rem;
+    .carouselContainer{
+        width: 300%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 3em;
+        transition: all .5s ease;
+        transform: translateX(0%);
+        margin-left: -100%;
+        margin-bottom: 3rem;
+        .carouselItem{    
+            width: calc(100% / 3 - 3em);
+            position: relative;
+            display: inline-block;
+            text-align: center;
+            .imgCarousel{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                @include neo(1, 1em, .7em);
+            }
+            .textCarousel{
+                font-size: 1.2rem;
+                font-weight: bolder;
+                text-shadow: 1px 1px 1px $color1;
+                color: $color2;
+                position: absolute;
+                top: 80%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+        
+    }
+    .carouselBtn{
+        position: absolute;
+        background-color: none;
+        top: 45%;
+        transform: translateY(-50%);
+        font-size: 2.5rem;
+        font-weight: bolder;
+        font-family: monospace;
+        opacity: .5;
+        color: $color3;
+        cursor: pointer;
+    }
+    .carouselBtn:hover{
+        color: $color4;
+        opacity: 1;
+    }
+    .carouselBtnRight{
+        right: 10px; 
+    }
+    .carouselBtnLeft{
+        left: 15px;
+    }
+}
+
+@media only screen and (max-width: 1020px){
+    .carousel{
+        .carouselContainer{
+            .carouselItem{
+                .textCarousel{
+                    font-size: 1rem;
+                }
+            }
+        }
+        .carouselBtn{
+            font-size: 2rem;
+        }
+    }
+}
+@media only screen and (max-width: 900px){
+    .carousel{
+        .carouselContainer{
+            padding: 0 1em;
+            .carouselItem{
+                .textCarousel{
+                    font-size: .8rem;
+                }
+            }
+        }
+        .carouselBtn{
+            font-size: 1.5rem;
+        }
+    }
+}
+@media only screen and (max-width: 600px){
+    .carousel{
+        padding: 0pt;
+        .carouselContainer{
+            padding: 0 0em;
+            .carouselItem{
+                .textCarousel{
+                    display: none;
+                }
+            }
+        }
+        .carouselBtn{
+            font-size: 1rem;
+        }
+        .carouselBtnLeft{
+            left: 10px; 
+        }
+    }
+}

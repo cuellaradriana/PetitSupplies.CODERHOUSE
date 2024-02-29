@@ -1,0 +1,129 @@
+footer{
+    width: 100%;
+    height: auto;
+    padding-top: 2.3rem;
+    .formFooter{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.2rem;
+        #subscription{
+            width: 20%;
+            height: 1.7rem;
+            border: .5px solid $color3;
+            margin: 5px;
+            font-size: 1rem;
+            padding: .5rem;
+            border-radius: 1.5rem;
+        }
+        #sendEmail{
+            width: 16.5%;
+            height: 1.7rem;
+            border-radius: 1.5rem;
+            border: 2px solid $color3;
+            background-color: $color3;
+            color: $color2;
+            font-weight: bolder;
+            font-size: 1rem;
+            transition: 1s;
+        }
+        #sendEmail:hover{
+            background-color: $color4;
+            border: 2px solid $color4;
+        }
+    }
+    .socialMedia{
+        margin-top: 1.5rem;
+        display: flex;
+        justify-content: center;
+        a{
+            padding: 1rem;
+            text-decoration: none;
+            color: $color3;
+            font-size: 2rem;
+            transition: 1s;
+        }
+        a:hover{
+            color: $color4;
+        }
+    }
+}
+
+@media only screen and (max-width: 1020px){
+    footer{
+        padding-top: 1rem;
+        .formFooter{
+            font-size: 1rem;
+            #subscription{
+                width: 14rem;
+                height: 1.75rem;
+                margin: 0.3rem;
+                font-size: 1rem;
+                margin-bottom: 0.5rem;
+            }
+            #sendEmail{
+                width: 14.2rem;
+                height:1.75rem;
+                font-size: 1rem;
+            }
+        }
+        .socialMedia{
+            padding: 0;
+            margin-top: 1.6rem;
+        }
+    }
+}
+@media only screen and (max-width: 768px){
+    footer{
+        height: auto;
+        padding-top: 1rem;
+        .formFooter{
+            font-size: .8rem;
+            label{
+                font-size: .8rem;
+                em{
+                    font-size: .8rem;
+                }
+            }
+            #subscription{
+                width: 12rem;
+                height: 1.5rem;
+                margin: .3rem;
+                font-size: .8rem;
+                margin-bottom: .5rem;
+            }
+            #sendEmail{
+                width: 12.2rem;
+                height: 1.5rem;
+                font-size: .8rem;
+            }
+        }
+        .socialMedia{
+            padding: 0;
+            margin-top: 1.2rem;
+            a{
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 480px){
+    footer{
+        height: auto;
+        .formFooter{
+            font-size: 0.8rem;
+            #subscription{
+                width: 10rem;
+                margin-bottom: .3rem;
+            }
+            #sendEmail{
+                width: 10rem;
+
+            }
+        }
+        .socialMedia{
+            padding: 0;
+            margin-top: .8rem; 
+        }
+    }
+}

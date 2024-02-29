@@ -1,0 +1,163 @@
+#mainCakeBox{
+    padding: 1rem;
+    height: auto;
+    width: 100%;
+    .subtitle{
+        text-align: center;
+        text-decoration: underline 3px $color3;
+        font-size: 2.5rem;
+        width:auto;
+        margin-bottom: 3rem;
+        margin-top: 1rem;
+    }
+    .filter{
+        margin-left: 60%;
+        #jsSearchInput{
+            width: 15rem;
+            border: 1px solid $color5;
+            border-radius: 15px;
+            padding: .5rem;
+        }
+        #jsClearBtn{
+            border: 1px solid $color5;
+            border-radius: 15px;
+            background-color: $color5;
+            color: $color2;
+            padding: .5rem;
+            font-weight: bolder;
+        }
+    }
+    #jsProductsContainer{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+        justify-content: center;
+        .productCard{
+            padding: 1rem;
+            width: 24rem;
+            border: 1px solid $color4;
+            border-radius: 20px;
+            margin: 1rem;
+            text-align: center;
+            font-weight: bolder;
+            .idCard{
+                display: none;
+            }
+            .imgCard{
+                height: 13rem;
+            }
+            .nameCard{
+                color: $color3;
+                font-size: 1.3rem;
+            }
+            .descriptionCard{
+                font-size: 1.2rem;
+                color: $color4;
+            }
+            .priceCard{
+                font-size: 1.2rem;
+            }
+            
+            .btnCard{
+                padding: .5rem;
+                border-radius: 10px;
+                border: 1px solid $color5;
+                color: $color2;
+                background-color: $color5;
+                font-weight: bolder;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1020px){
+    #mainCakeBox{
+        .subtitle{
+            font-size: 2.1rem;
+            margin-bottom: 2.2rem;
+            margin-top: .8rem;
+        }
+        .filter{
+            margin-left: 55%;
+        }
+    }
+}
+@media only screen and (max-width: 900px){
+    #mainCakeBox{
+        .filter{
+            text-align: center;
+            margin: 0;
+        }
+        #jsProductsContainer{
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-evenly;
+            .productCard{
+                padding: 1rem;
+                width: 20rem;
+                .nameCard{
+                    font-size: 1.1rem;
+                }
+                .descriptionCard{
+                    font-size: 1rem;
+                }
+                .priceCard{
+                    font-size: 1.1rem;
+                }
+                .btnCard{
+                    font-size: .9rem;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 768px){
+    #mainCakeBox{
+        .subtitle{
+            font-size: 1.8rem;
+        }
+        #jsProductsContainer{
+            .productCard{
+                padding: .4rem;
+                width: 16rem;
+                .imgCard{
+                    height: 10rem;
+                }
+                .nameCard{
+                    font-size: 1rem;
+                    margin-bottom: .3rem;
+                }
+                .descriptionCard{
+                    font-size: .9rem;
+                    margin-bottom: .3rem;
+                }
+                .priceCard{
+                    font-size: .9rem;
+                    margin-bottom: 0;
+                }
+                .btnCard{
+                    font-size: .8rem;
+                    margin-bottom: .5rem;
+                }
+            }
+        }
+    } 
+}
+@media only screen and (max-width: 480px){
+    #mainCakeBox{
+        .subtitle{
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            margin-top: .5rem;
+        }
+        .filter{
+            #jsSearchInput{
+                width: 10rem;
+                font-size: .8rem;
+            }
+            #jsClearBtn{
+                font-size: .8rem;
+            }
+        }
+    }
+}
